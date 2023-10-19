@@ -20,7 +20,7 @@ pipeline {
             steps {
                 sh 'docker run -d -p 8082:8082 my-node-app:${env.BUILD_ID}'
                 sleep 10
-                sh 'curl http://localhost:8081' // Add tests here
+                sh 'curl http://localhost:8082' // Add tests here
             }
         }
 
